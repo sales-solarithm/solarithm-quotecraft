@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-hover: #B5952F;
+  --color-brand-dark: #121212;
+  --color-brand-card: #1E1E1E;
+  --color-brand-muted: #2A2A2A;
+  --color-brand-border: #333333;
+  --color-brand-border-secondary: #2A2A2A;
+  --color-primary-hover: #B5952F;
+}
+
+@layer base {
+  :root, .dark {
+    /* Main Background: #121212 */
+    --background: 0 0% 7.1%;
+    /* Primary Text: #FFFFFF */
+    --foreground: 0 0% 100%;
+
+    /* Sidebar & Card Background: #1E1E1E */
+    --card: 0 0% 11.8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 11.8%;
+    --popover-foreground: 0 0% 100%;
+
+    /* Solarithm Gold Accent: #D4AF37 */
+    --primary: 46 65% 52.4%;
+    --primary-foreground: 0 0% 0%;
+
+    /* Sub-containers, Hover States & Inputs: #2A2A2A */
+    --secondary: 0 0% 16.5%;
+    --secondary-foreground: 0 0% 90%;
+
+    --muted: 0 0% 16.5%;
+    /* Secondary Muted Labels: #9CA3AF */
+    --muted-foreground: 218 11% 65%;
+
+    --accent: 0 0% 16.5%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Standard 1px Borders: #333333 */
+    --border: 0 0% 20%;
+    --input: 0 0% 16.5%;
+    --ring: 46 65% 52.4%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+  body {
+    @apply bg-[#121212] text-white;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Solarithm Master Design System Status Badges & Utilities */
+@layer components {
+  .badge-approved,
+  .badge-accepted,
+  .badge-profit {
+    @apply px-2.5 py-0.5 rounded text-xs font-medium border text-center text-emerald-400 bg-emerald-500/10 border-emerald-500/30;
+  }
+
+  .badge-warning,
+  .badge-draft,
+  .badge-in-progress {
+    @apply px-2.5 py-0.5 rounded text-xs font-medium border text-center text-amber-400 bg-amber-500/10 border-amber-500/30;
+  }
+
+  .badge-negative,
+  .badge-rejected {
+    @apply px-2.5 py-0.5 rounded text-xs font-medium border text-center text-rose-400 bg-rose-500/10 border-rose-500/30;
+  }
+
+  .badge-info,
+  .badge-blue {
+    @apply px-2.5 py-0.5 rounded text-xs font-medium border text-center text-blue-400 bg-blue-500/10 border-blue-500/30;
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Solarithm QuoteCraft</title>
+    <meta name="description" content="Enterprise-grade tool for generating professional quotations for solar power plant projects." />
+    <meta property="og:title" content="Solarithm QuoteCraft" />
+    <meta property="og:description" content="Enterprise-grade tool for generating professional quotations for solar power plant projects." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/buffer@6.0.3/index.min.js"></script>
+    <script>
+      if (typeof window !== 'undefined') {
+        window.Buffer = window.Buffer || (window.buffer && window.buffer.Buffer);
+        if (typeof globalThis !== 'undefined') {
+          globalThis.Buffer = window.Buffer;
+          globalThis.global = globalThis;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

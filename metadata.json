@@ -1,0 +1,6 @@
+{
+  "name": "Solarithm QuoteCraft",
+  "description": "Enterprise-grade tool for generating professional quotations for solar power plant projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
