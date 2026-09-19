@@ -5,6 +5,7 @@ if (!process.env.NODE_ENV || process.env.NODE_ENV !== 'development') {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
   },

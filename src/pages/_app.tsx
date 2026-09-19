@@ -2,6 +2,8 @@ import type { AppProps } from 'next/app';
 import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import dynamic from 'next/dynamic';
+import '../app/globals.css';
+import '../index.css';
 
 const App = dynamic(() => import('../App'), { ssr: false });
 

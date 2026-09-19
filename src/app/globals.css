@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "tailwindcss";
+
+@theme {
+  --color-brand-gold: #D4AF37;
+  --color-brand-gold-hover: #B5952F;
+  --color-brand-dark: #121212;
+  --color-brand-card: #1E1E1E;
+  --color-brand-muted: #2A2A2A;
+  --color-brand-border: #333333;
+  --color-brand-border-secondary: #2A2A2A;
+  --color-primary-hover: #B5952F;
+}
+
+@layer base {
+  :root, .dark {
+    --background: 0 0% 7.1%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 11.8%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 11.8%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 46 65% 52.4%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 16.5%;
+    --secondary-foreground: 0 0% 90%;
+    --muted: 0 0% 16.5%;
+    --muted-foreground: 218 11% 65%;
+    --accent: 0 0% 16.5%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 16.5%;
+    --ring: 46 65% 52.4%;
+    --radius: 0.5rem;
+  }
+
+  * {
+    @apply border-[hsl(var(--border))];
+  }
+  body {
+    @apply bg-[#121212] text-white;
+    font-family: 'Inter', sans-serif;
+  }
+}
